@@ -134,8 +134,7 @@ header {
   padding: 20px;
 }
 
-.right-head > h1,
-h3 {
+.site-title-text, .sub-title-text {
   text-align: right;
   margin-right: 60px;
   margin-bottom: 15px;
@@ -149,7 +148,7 @@ h3 {
   user-select: none;
 }
 
-.right-head > h3 {
+.sub-title-text {
   clear: both;
   font-size: 1em;
 }
