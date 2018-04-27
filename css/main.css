@@ -81,6 +81,7 @@ nav {
   color: black;
   text-decoration: none;
   padding: 10px 50px;
+  height: 100%;
 }
 
 .fixed-header {
