@@ -313,7 +313,7 @@ textarea:focus {
   top: 3px;
 }
 
-.hamburger > i {
+.fa-bars {
   font-size: 2em;
   padding: 2px;
 }
