@@ -90,6 +90,18 @@ nav {
   left: 0;  
 }
 
+/* Fix padding on anchor links */
+
+h2::before,
+#about-anchor::before {
+  content: " ";
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /*        *
    *        *
    *        *
@@ -347,7 +359,7 @@ a.fab {
     width: 80%;
   }
   #copyright {
-    font-size 0.8em;
+    font-size: 0.8em;
   }
 }
 
@@ -363,7 +375,7 @@ a.fab {
     width: 33%;
   }
   #copyright {
-    font-size 0.9em;
+    font-size: 0.9em;
   }
 }
 
@@ -383,16 +395,4 @@ a.fab {
 .active {
   transform: translateX(0px);
   transition: transform 0.3s ease;
-}
-
-/* Fix padding on anchor links */
-
-h2::before,
-#about-anchor::before {
-  content: " ";
-  display: block;
-  height: 60px;
-  margin-top: -60px;
-  visibility: hidden;
-  pointer-events: none;
 }
