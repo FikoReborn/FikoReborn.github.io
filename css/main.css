@@ -184,6 +184,14 @@ h3 {
  *          */
 
 #projects {
+  width: 100%;
+}
+
+#projects-anchor {
+  clear: both;
+}
+
+#projects-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
