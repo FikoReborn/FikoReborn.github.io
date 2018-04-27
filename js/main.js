@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   // Pull out mobile menu when menu button is clicked
 
-  $("#hamburger").click(function() {
+  $(".hamburger").click(function() {
     $(".menu-list").toggleClass("active");
   });
 
