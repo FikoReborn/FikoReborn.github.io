@@ -10,7 +10,6 @@ body {
   background-color: #757575;
   font-family: "Share", cursive;
   overflow-x: hidden;
-  overflow-y: default;
   position: absolute;
   width: 100%;
 }
@@ -179,7 +178,7 @@ h3 {
    *          *
    *          */
 
-#projects {
+#projects-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
