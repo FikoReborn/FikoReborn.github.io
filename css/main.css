@@ -82,6 +82,7 @@ nav {
   text-decoration: none;
   padding: 10px 50px;
   height: 100%;
+  display: block;
 }
 
 .fixed-header {
