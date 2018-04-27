@@ -41,11 +41,11 @@ section {
 }
 
 /*            *
-   *            *
-   *            *
-   * Navigation *
-   *            *
-   *            */
+ *            *
+ *            *
+ * Navigation *
+ *            *
+ *            */
 
 nav {
   padding: 0;
@@ -92,9 +92,8 @@ nav {
 
 /* Fix padding on anchor links */
 
-h2::before,
-#about-anchor::before {
-  content: " ";
+h2::before, #about-anchor::before {
+  content: ' ';
   display: block;
   height: 60px;
   margin-top: -60px;
@@ -103,11 +102,12 @@ h2::before,
 }
 
 /*        *
-   *        *
-   *        *
-   * Header *
-   *        *
-   *        */
+ *        *
+ *        *
+ * Header *
+ *        *
+ *        */
+
 
 header {
   width: 100%;
@@ -155,11 +155,11 @@ h3 {
 }
 
 /*              *
-   *              *
-   *  First/About *
-   *  Section     *
-   *              *
-   *              */
+ *              *
+ *  First/About *
+ *  Section     *
+ *              *
+ *              */
 
 #about-section {
   width: 100%;
@@ -177,13 +177,13 @@ h3 {
 }
 
 /*          *
-   *          *
-   * Projects *
-   * Section  *
-   *          *
-   *          */
+ *          *
+ * Projects *
+ * Section  *
+ *          *
+ *          */
 
-#projects-container {
+#projects {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -196,8 +196,7 @@ h3 {
   border-radius: 50%;
 }
 
-.project-image:hover,
-.hoverImage {
+.project-image:hover, .hoverImage {
   border: 8px solid white;
   box-shadow: 1px 1px 10px black;
   cursor: pointer;
@@ -221,19 +220,11 @@ h3 {
 }
 
 /*               *
-   *               *
-   * Forms/Contact *
-   * Section       *
-   *               *
-   *               */
-
-label {
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-}
+ *               *
+ * Forms/Contact *
+ * Section       *
+ *               *
+ *               */
 
 #contact {
   width: 95%;
@@ -246,19 +237,67 @@ input {
   padding-bottom: 25px;
 }
 
+.label {
+  font-weight: bold;
+}
+
 .label,
 .form-item {
   width: 100%;
 }
 
-#submit-button {
-  width: 100px;
+input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #FFFDE7;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+}
+
+input:focus {
+  background-color: #fff;
+  outline: 0;
 }
 
 textarea {
   width: 100%;
   height: 150px;
+  border-radius: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #FFFDE7;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
 }
+
+textarea:focus {
+  background-color: #fff;
+  outline: 0;
+}
+
+#submit-button {
+  width: 110px;
+  border-radius: 20px;
+  background-color: #1A237E;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 3px solid;
+}
+
+#submit-button:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#submit-button:focus {
+  border-color: black;
+  outline: 0;
+}
+
+/* Mobile menu */
 
 #hamburger {
   width: 10px;
@@ -273,11 +312,11 @@ textarea {
 }
 
 /*        *
-   *        *
-   * Footer *
-   *        *
-   *        *
-   *        */
+ *        *
+ * Footer *
+ *        *
+ *        *
+ *        */
 
 footer {
   text-align: center;
@@ -293,6 +332,14 @@ footer {
   color: black;
 }
 
+a > i.fab {
+  text-decoration: none;
+}
+
+a > i.fab:hover {
+  color: blue;
+}
+
 #copyright {
   width: 60%;
   text-align: left;
@@ -304,20 +351,19 @@ footer {
   text-align: right;
 }
 
-a.fab {
-  text-decoration: none;
-}
+
 
 /*        *
-   *        *
-   * Break  *
-   * Points *
-   *        *
-   *        */
+ *        *
+ * Break  *
+ * Points *
+ *        *
+ *        */
 
 @media screen and (max-width: 799px) {
-  /*  Mobile Menu  */
-
+  
+    /*  Mobile Menu  */
+  
    .menu-list {
     position: absolute;
     background-color: #536dfe;
@@ -359,7 +405,7 @@ a.fab {
     width: 80%;
   }
   #copyright {
-    font-size: 0.8em;
+    font-size 0.8em;
   }
 }
 
@@ -380,19 +426,23 @@ a.fab {
 }
 
 @media screen and (min-width: 1300px) {
+  
   #contents {
     width: 1200px;
   }
 }
 
+
+
 /*                *
-   *                *
-   * Jquery Toggles *
-   *                *
-   *                *
-   *                */
+ *                *
+ * Jquery Toggles *
+ *                *
+ *                *
+ *                */
 
 .active {
   transform: translateX(0px);
   transition: transform 0.3s ease;
+  
 }
