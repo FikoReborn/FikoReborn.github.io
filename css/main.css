@@ -22,7 +22,7 @@ section {
   padding-bottom: 60px;
 }
 
-#contents {
+.contents {
   width: 100%;
   background-color: #e0e0e0;
   margin: auto;
@@ -119,22 +119,22 @@ header {
   font-size: 1.2em;
 }
 
-#left-head {
+.left-head {
   width: 10%;
   padding-left: 10px;
 }
 
-#left-head > img {
+.left-head > img {
   margin: 10px;
   height: 80px;
 }
 
-#right-head {
+.right-head {
   width: 90%;
   padding: 20px;
 }
 
-#right-head > h1,
+.right-head > h1,
 h3 {
   text-align: right;
   margin-right: 60px;
@@ -149,7 +149,7 @@ h3 {
   user-select: none;
 }
 
-#right-head > h3 {
+.right-head > h3 {
   clear: both;
   font-size: 1em;
 }
@@ -161,12 +161,12 @@ h3 {
  *              *
  *              */
 
-#about-section {
+.about-section {
   width: 100%;
   padding-top: 60px;
 }
 
-#profile {
+.profile {
   float: left;
   margin: 10px;
   width: 150px;
@@ -183,15 +183,15 @@ h3 {
  *          *
  *          */
 
-#projects {
+.projects {
   width: 100%;
 }
 
-#projects-anchor {
+.projects-anchor {
   clear: both;
 }
 
-#projects-container {
+.projects-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -234,7 +234,7 @@ h3 {
  *               *
  *               */
 
-#contact {
+.contact {
   width: 95%;
   margin: auto;
 }
@@ -285,7 +285,7 @@ textarea:focus {
   outline: 0;
 }
 
-#submit-button {
+.submit-button {
   width: 110px;
   border-radius: 20px;
   background-color: #1A237E;
@@ -295,26 +295,26 @@ textarea:focus {
   border: 3px solid;
 }
 
-#submit-button:hover {
+.submit-button:hover {
   box-shadow: none;
   cursor: pointer;
 }
 
-#submit-button:focus {
+.submit-button:focus {
   border-color: black;
   outline: 0;
 }
 
 /* Mobile menu */
 
-#hamburger {
+.hamburger {
   width: 10px;
   position: absolute;
   right: 50px;
   top: 3px;
 }
 
-#hamburger > i {
+.hamburger > i {
   font-size: 2em;
   padding: 2px;
 }
@@ -348,13 +348,13 @@ a > i.fab:hover {
   color: blue;
 }
 
-#copyright {
+.copyright {
   width: 60%;
   text-align: left;
   font-size: 0.6em;
 }
 
-#social {
+.social {
   width: 40%;
   text-align: right;
 }
@@ -397,10 +397,10 @@ a > i.fab:hover {
 }
 
 @media screen and (min-width: 800px) {
-  #hamburger {
+  .hamburger {
     display: none;
   }
-  #contents {
+  .contents {
     width: 90%;
   }
   .project-item {
@@ -412,30 +412,30 @@ a > i.fab:hover {
   .form-item {
     width: 80%;
   }
-  #copyright {
+  .copyright {
     font-size: 0.8em;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  #contact {
+  .contact {
     width: 50%;
     margin: auto;
   }
-  #contents {
+  .contents {
     width: 800px;
   }
   .project-item {
     width: 33%;
   }
-  #copyright {
+  .copyright {
     font-size: 0.9em;
   }
 }
 
 @media screen and (min-width: 1300px) {
   
-  #contents {
+  .contents {
     width: 1200px;
   }
 }
