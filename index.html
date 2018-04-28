@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,24 +28,24 @@
 
     <nav>
         <ul class="menu-list">
-            <li class="menu-item">
+            <li class="menu-item menu-active" id="about-button">
                 <a href="#about-anchor" class="menu-button">
-                    About        
+                    About
                 </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item" id="projects-button">
                 <a href="#projects-anchor" class="menu-button">
-                    Projects        
+                    Projects
                 </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item" id="contact-button">
                 <a href="#contact-anchor" class="menu-button">
-                    Contact        
+                    Contact
                 </a>
             </li>
         </ul>
-        <span class="hamburger">
-            <i class="fas fa-bars"></i>
+        <span class="mobile-menu">
+            <i class="fas fa-bars menu-icon"></i>
         </span>
     </nav>
 
@@ -55,13 +56,14 @@
         <section class="about-section">
             <h2 id="about-anchor">About Me</h2>
             <img src="img/aduff.jpg" class="profile" alt="profile picture">
-    <p>My name is Adam Duff, and I am an up and coming front-end web developer.  I spent much of middle school years (some 20 years ago) designing my own websites, and somewhere along the way, I stopped doing it. So, here I am today, more intrigued by web development than ever!</p>
-    
-    <p>It truly is amazing, looking back, at how much things have changed.  Back in "the day," we only had to account for desktop sizes and cross-browser compatibility.  These days, everyone is viewing your website on different devices, with many different screen sizes, and truly has morphed the way we go about website design and development.</p>
-    
-    <p>My intent with this website is just a spot to share the projects I am working on, and I may add a blog/updates page at some point, if I am able to justify it, just to share my thoughts.  For now, this is pretty barebones, and knowing me, will see many evolutions.</p>
-    
-    <p>My end goal is to obtain a career in web development.  I have been studying on and off over the last year, and I can safely say I have not only refreshed my memory on how all this stuff works, I am now more knowledgable on the subject than I have ever been before. I was lucky enough to obtain the Grow with Google Scholarship through Udacity, and I am working hard on completing that.  From there, who knows what is in store!  It is a journey and all journeys start somewhere.  For now, it starts here.</p>        </section>
+            <p>My name is Adam Duff, and I am an up and coming front-end web developer. I spent much of middle school years (some 20 years ago) designing my own websites, and somewhere along the way, I stopped doing it. So, here I am today, more intrigued by web development than ever!</p>
+
+            <p>It truly is amazing, looking back, at how much things have changed. Back in "the day," we only had to account for desktop sizes and cross-browser compatibility. These days, everyone is viewing your website on different devices, with many different screen sizes, and truly has morphed the way we go about website design and development.</p>
+
+            <p>My intent with this website is just a spot to share the projects I am working on, and I may add a blog/updates page at some point, if I am able to justify it, just to share my thoughts. For now, this is pretty barebones, and knowing me, will see many evolutions.</p>
+
+            <p>My end goal is to obtain a career in web development. I have been studying on and off over the last year, and I can safely say I have not only refreshed my memory on how all this stuff works, I am now more knowledgable on the subject than I have ever been before. I was lucky enough to obtain the Grow with Google Scholarship through Udacity, and I am working hard on completing that. From there, who knows what is in store! It is a journey and all journeys start somewhere. For now, it starts here.</p>
+        </section>
         <div class="divider"></div>
         <!-- **PROJECT SECTION**  -->
 
@@ -70,29 +72,41 @@
             <p>Below are a few projects I have completed:</p>
             <div class="projects-container">
                 <div class="project-item">
-      
+
                     <img src="http://aduff.org/Images/patatap.png" class="project-image" alt="Patatap">
-                    <a href="http://aduff.org/Projects/PataTap" class="project-text" target="_blank"><h4>PataTap<br>(Keyboard Required)</h4></a>
+                    <a href="http://aduff.org/Projects/PataTap" class="project-text" target="_blank">
+                        <h4>PataTap<br>(Keyboard Required)</h4>
+                    </a>
                 </div>
                 <div class="project-item">
                     <img src="http://aduff.org/Images/color-game.png" class="project-image" alt="Color Game">
-                    <a href="http://aduff.org/Projects/ColorGame/colorgame.html" class="project-text" target="_blank"><h4>Color<br>Game</h4></a>
+                    <a href="http://aduff.org/Projects/ColorGame/colorgame.html" class="project-text" target="_blank">
+                        <h4>Color<br>Game</h4>
+                    </a>
                 </div>
                 <div class="project-item">
                     <img src="http://aduff.org/Images/quote-gen.png" class="project-image" alt="Random Quote Generator">
-                    <a href="https://codepen.io/FikoReborn/full/KRKOdb/" class="project-text" target="_blank"><h4>Random Quote<br>Generator</h4></a>
+                    <a href="https://codepen.io/FikoReborn/full/KRKOdb/" class="project-text" target="_blank">
+                        <h4>Random Quote<br>Generator</h4>
+                    </a>
                 </div>
                 <div class="project-item">
                     <img src="http://aduff.org/Images/twitch-stream.png" class="project-image" alt="Twitch Streamer">
-                    <a href="https://codepen.io/FikoReborn/full/vjNEwZ/" class="project-text" target="_blank"><h4>Twitch Streamer<br>Online Status</h4></a>
+                    <a href="https://codepen.io/FikoReborn/full/vjNEwZ/" class="project-text" target="_blank">
+                        <h4>Twitch Streamer<br>Online Status</h4>
+                    </a>
                 </div>
                 <div class="project-item">
                     <img src="http://aduff.org/Images/weather.png" class="project-image" alt="Weather App">
-                    <a href="https://codepen.io/FikoReborn/full/dePEze/" class="project-text" target="_blank"><h4>Weather<br>App</h4></a>
+                    <a href="https://codepen.io/FikoReborn/full/dePEze/" class="project-text" target="_blank">
+                        <h4>Weather App</h4>
+                    </a>
                 </div>
                 <div class="project-item">
                     <img src="http://aduff.org/Images/wiki-search.png" class="project-image" alt="Wikipedia Search">
-                    <a href="https://codepen.io/FikoReborn/full/zjGjMx/" class="project-text" target="_blank"><h4>Wikipedia<br>Search</h4></a>
+                    <a href="https://codepen.io/FikoReborn/full/zjGjMx/" class="project-text" target="_blank">
+                        <h4>Wikipedia<br>Search</h4>
+                    </a>
                 </div>
             </div>
         </section>
@@ -134,12 +148,12 @@
 
         <footer>
             <div class="copyright">
-                Copyright &copy; Adam Duff 2018.
+                Copyright &copy; Adam M. Duff 2018.
             </div>
             <div class="social">
-                <a href="https://www.facebook.com/FikoReborn" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://twitter.com/FikoReborn" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://github.com/FikoReborn" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.facebook.com/FikoReborn" target="_blank"><i class="fab fa-facebook-square social-icons"></i></a>
+                <a href="https://twitter.com/FikoReborn" target="_blank"><i class="fab fa-twitter-square social-icons"></i></a>
+                <a href="https://github.com/FikoReborn" target="_blank"><i class="fab fa-github-square social-icons"></i></a>
             </div>
         </footer>
 
