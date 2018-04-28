@@ -227,6 +227,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    text-align: center;
     width: 100%;
 }
 
