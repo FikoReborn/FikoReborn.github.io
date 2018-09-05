@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Pull projects list from external json file
   // This way I can add and modify project data with ease
-  fetch('http://127.0.0.1:8080/data/projects.json')
+  fetch('../data/projects.json')
     .then(response => response.json())
     .then(data => {
       runData(data.projects);
