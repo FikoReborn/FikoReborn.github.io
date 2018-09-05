@@ -5,13 +5,13 @@
  *          *
  *          */
 
- html, body {
-     box-sizing: border-box;
- }
+html, body {
+    box-sizing: border-box;
+}
 
- *, *:before, *:after {
-     box-sizing: inherit;
- }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body {
     margin: 0;
@@ -48,7 +48,6 @@ section {
     clear: both;
 }
 
-
 /*            *
  *            *
  *            *
@@ -80,8 +79,7 @@ nav {
     border-radius: 100px 100px 0 0;
 }
 
-.menu-active,
-.menu-item:hover {
+.menu-active, .menu-item:hover {
     background-color: #e0e0e0;
     border: 1px solid #000;
     border-bottom: none;
@@ -127,7 +125,6 @@ nav {
     padding: 2px;
 }
 
-
 /* Fix padding on anchor links */
 
 h2::before {
@@ -138,7 +135,6 @@ h2::before {
     visibility: hidden;
     pointer-events: none;
 }
-
 
 /*        *
  *        *
@@ -172,8 +168,7 @@ header {
     padding: 20px;
 }
 
-.site-title-text,
-.sub-title-text {
+.site-title-text, .sub-title-text {
     text-align: right;
     margin-right: 60px;
     margin-bottom: 15px;
@@ -191,7 +186,6 @@ header {
     clear: both;
     font-size: 1em;
 }
-
 
 /*              *
  *              *
@@ -215,7 +209,6 @@ header {
     box-shadow: 3px 3px 10px black;
 }
 
-
 /*          *
  *          *
  * Projects *
@@ -238,19 +231,14 @@ header {
     width: 100%;
 }
 
-.project-image {
-    width: 200px;
-    max-width: 100%;
-    border: 8px solid #000;
-    border-radius: 50%;
-}
-
 .project-item {
     width: 100%;
     border-left: 5px solid #000;
+    border-top: 10px solid #000;
     border-radius: 30px;
-    margin-bottom: 15px;
-    padding: 15px;
+    margin-bottom: 55px;
+    box-sizing: border-box;
+    padding: 25px;
 }
 
 .project-category {
@@ -293,8 +281,7 @@ header {
     font-weight: bold;
 }
 
-.label,
-.form-item {
+.label, .form-item {
     width: 100%;
 }
 
@@ -350,7 +337,6 @@ textarea:focus {
     font-size: 1.2em;
 }
 
-
 /*        *
  *        *
  * Footer *
@@ -387,7 +373,6 @@ footer {
     width: 40%;
     text-align: right;
 }
-
 
 /*        *
  *        *
@@ -436,7 +421,8 @@ footer {
         width: 90%;
     }
     .project-item {
-        width: 50%;
+        margin-right: 40px;
+        width: calc(50% - 40px);
     }
     .label {
         width: 20%;
@@ -457,14 +443,10 @@ footer {
     .contents {
         width: 800px;
     }
-    .project-item {
-        width: 33%;
-    }
     .copyright {
         font-size: 0.9em;
     }
 }
-
 
 /*                *
  *                *
@@ -474,6 +456,6 @@ footer {
  *                */
 
 .active {
-    transform: translateX(0px);
+    transform: translateX(0);
     transition: transform 0.3s ease;
 }
