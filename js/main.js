@@ -41,21 +41,13 @@ activateMButton = (header, nav) => {
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementsByTagName('header')[0];
     const nav = document.getElementsByTagName('nav')[0];
+    const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
+    const menuList = document.getElementsByClassName('menu-list')[0];
     window.addEventListener('scroll', () => {
         stickyHeader(header, nav);
         activateMButton(header, nav);
+        mobileMenu.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        })
     });
 })
-
-$(document).ready(function() {
-    // Pull out mobile menu when menu button is clicked
-    $(".mobile-menu").click(function() {
-        $(".menu-list").toggleClass("active");
-    });
-
-    // Close mobile menu when item is clicked
-    $(".menu-button").click(function() {
-        $(".menu-list").removeClass("active");
-    });
-
-});
