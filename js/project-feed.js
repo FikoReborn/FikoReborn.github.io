@@ -15,7 +15,7 @@ runData = data => {
   let html = '';
 
   for (let i = lastEntry; i >= 0; i--) {
-    // Iterate over projects
+    // Iterate over projects and add them to projects section of page
     const name = data[i].name;
     const category = setCategory(data[i].category);
     const description = data[i].description;
