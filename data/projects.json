@@ -1,0 +1,99 @@
+{
+  "projects": [
+    {
+      "name": "Simple To-Do List",
+      "url": "https://www.aduff.org/Projects/TodoList",
+      "source": "https://github.com/FikoReborn/FikoReborn.github.io/tree/master/Projects/TodoList",
+      "category": 1,
+      "description":"A simple to-do list that allows you to add a remove tasks. This was one of my first projects."
+    },
+    {
+      "name": "Color Matching Game",
+      "url": "https://www.aduff.org/Projects/ColorGame/colorgame.html",
+      "source": "https://github.com/FikoReborn/FikoReborn.github.io/tree/master/Projects/ColorGame",
+      "category": 1,
+      "description":"One of my first project, this is a color matching game. The purpose being to choose the color that matches the RGB value given at the top of the screen. There are two difficulties and the colors are randomly shown each new game and each time the difficulty is changed."
+    },
+    {
+      "name": "Patatap Game",
+      "url": "https://www.aduff.org/Projects/PataTap",
+      "source": "https://github.com/FikoReborn/FikoReborn.github.io/tree/master/Projects/PataTap",
+      "category": 1,
+      "description":"This is an interesting app, it uses Paper.js to map circles to each key on your keyboard, as well as a different sound effect. It's easier to show than it is to explain, so try it out!"
+    },
+    {
+      "name": "Random Quote Generator",
+      "url": "https://codepen.io/FikoReborn/full/KRKOdb/",
+      "source": "https://codepen.io/FikoReborn/full/KRKOdb/",
+      "category": 2,
+      "description":"A simple app that randomly generates quotes from the Quotes on Design API."
+    },
+    {
+      "name": "Twitch Streamer Online Status",
+      "url": "https://codepen.io/FikoReborn/full/vjNEwZ/",
+      "source": "https://codepen.io/FikoReborn/full/vjNEwZ/",
+      "category": 2,
+      "description":"This application uses the Twitch API to pull publicly available information of selected twitch users, and additionally gives their online/offline status."
+    },
+    {
+      "name": "Weather App",
+      "url": "https://codepen.io/FikoReborn/full/dePEze/",
+      "source": "https://codepen.io/FikoReborn/full/dePEze/",
+      "category":2,
+      "description":"This application shows the current weather at your location. It uses the FreeCodeCamp Weather API."
+    },
+    {
+      "name": "Wikipedia Search",
+      "url": "https://codepen.io/FikoReborn/full/zjGjMx/",
+      "source": "https://codepen.io/FikoReborn/full/zjGjMx/",
+      "category":2,
+      "description":"This app allows you to search Wikipedia for pretty much anything, and it will be displayed on screen."
+    },
+    {
+      "name": "Pixel Art Maker",
+      "url": "https://www.aduff.org/Projects/PixelArt",
+      "source": "https://github.com/FikoReborn/FikoReborn.github.io/tree/master/Projects/PixelArt",
+      "category":3,
+      "description":"First real 'project' through Udacity's Front-end Nanodegree program where I was mostly on my own to figure things out. This generates a table of pixels (size is user determined) and allows the user to fill each pixel with their designated color. Also known as.. Pixel Art!"
+    },
+    {
+      "name": "Memory Game",
+      "url": "https://www.aduff.org/udacity-memory-game",
+      "source": "https://github.com/FikoReborn/udacity-memory-game",
+      "category":3,
+      "description":"This is a Star Wars-themed memory game. Just try to match each picture with its identical tile. Beat your high score!"
+    },
+    {
+      "name": "Arcade Game Clone",
+      "url": "https://www.aduff.org/udacity-arcade-game",
+      "source": "https://github.com/FikoReborn/udacity-arcade-game",
+      "category":3,
+      "description":"This was a fun project, and one I was honestly lookingi forward to doing. Have you ever played the old arcade game \"Frogger?\" That is basically what this is, except the user plays as a human instead of a frog, and there are bugs instead of cars and trucks. Get to the other side, and reappear at the start, keep going. The bugs get faster each time, and a rogue bug is a little bit faster than the others. Beat your high score!"
+    },
+    {
+      "name": "Feedreader Test",
+      "source": "https://github.com/FikoReborn/udacity-feedreader-test",
+      "category":3,
+      "description":"This is a simple feedreader test, and it does just that. It tests a feed reader app. There is no live version since this will need to be cloned to your local machine to run. See instructions on the GitHub README. (Use the 'source' link below)"
+    },
+    {
+      "name": "Restaurant Reviews Project",
+      "source": "https://github.com/FikoReborn/mws-restaurant-stage-1",
+      "category":3,
+      "description":"This project gave the the objective of making a restaurant reviews app responsive and accessibility-friendly. This is also my first project dealing with service workers so it can be viewed offline without an internet connection."
+    },
+    {
+      "name": "MyReads Project",
+      "source": "https://github.com/FikoReborn/reactnd-project-myreads-starter",
+      "category":3,
+      "description":"My first React project (and the first time I learned that I am in love with React). After being given some very basic starter code(basically a layout with no functionality), my objective was to enable the ability to move books between shelves and enable a search feature - which would hold the same shelf-state as the main component."
+    },
+    {
+      "name": "NYS Parks Map",
+      "url": "https://www.aduff.org/nys-parks-map",
+      "source": "https://github.com/FikoReborn/nys-parks-map",
+      "category":3,
+      "description":"This was a truly start-from-scratch project. This is the final project through Udacity. I was to create a Neighborhood Map of my choice using Google Maps or another maps API with at least one third-party API to be shown in the infowindow. I chose to pull all data from New York State Parks from Open NY, and to pull additional data from Foursquare when each marker is clicked."
+    }
+  ]
+}
