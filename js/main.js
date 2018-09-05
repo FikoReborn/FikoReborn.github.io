@@ -1,37 +1,53 @@
+stickyHeader = (header, nav) => {
+    // Make nav fixed to top after scrolling past header
+    const windowTop = window.scrollY;
+    const headerHeight = header.offsetHeight;
+    windowTop > headerHeight ? nav.classList.add('fixed-header') : nav.classList.remove('fixed-header');
+}
+
+activateMButton = (header, nav) => {
+    // Page variables
+    const documentHeight = document.body.scrollHeight;
+    const windowHeight = window.innerHeight;
+    const windowTop = window.scrollY;
+    const navHeight = nav.offsetHeight;
+    const bottomOfPage = windowHeight + windowTop;
+
+    // Selectors
+    const aboutLoc = document.getElementsByClassName('about-section')[0].offsetTop;
+    const projectsLoc = document.getElementsByClassName('projects')[0].offsetTop;
+    const contactLoc = document.getElementsByClassName('contact')[0].offsetTop;
+    const buttons = [...document.getElementsByClassName('menu-list')[0].children];
+
+    // Change 'active' button depending on user page position
+    if (windowTop >= 0 && windowTop < projectsLoc - 100) {
+        buttons.forEach(button => {
+            if (button.classList[1]) button.classList.remove('menu-active');
+        });
+        document.getElementById('about-button').classList.add('menu-active');
+    } else if (bottomOfPage > documentHeight - 100) {
+        buttons.forEach(button => {
+            if (button.classList[1]) button.classList.remove('menu-active');
+        });
+        document.getElementById('contact-button').classList.add('menu-active');
+    } else if (windowTop >= projectsLoc && windowTop < contactLoc) {
+        buttons.forEach(button => {
+            if (button.classList[1]) button.classList.remove('menu-active');
+        });
+        document.getElementById('projects-button').classList.add('menu-active');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementsByTagName('header')[0];
     const nav = document.getElementsByTagName('nav')[0];
     window.addEventListener('scroll', () => {
-        const windowTop = window.scrollY;
-        const headerHeight = header.offsetHeight;
-        windowTop > headerHeight ? nav.classList.add('fixed-header') : nav.classList.remove('fixed-header');
+        stickyHeader(header, nav);
+        activateMButton(header, nav);
     });
 })
 
-
-
 $(document).ready(function() {
-    
-    // Change menu button class to "active" depending on where user is located on the page
-    $(window).scroll(function() {
-        var windowTop = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        var documentHeight = $(document).height();
-        var navHeight = $("nav").height();
-        var bottomOfPage = windowHeight + windowTop;
-        var aboutLoc = $(".about-section").offset();
-        var projectsLoc = $(".projects").offset();
-        var contactLoc = $(".contact").offset();
-        console.log(documentHeight);
-        if (windowTop >= 0 && windowTop < projectsLoc.top - 100) {
-            $("#about-button").addClass("menu-active").siblings().removeClass("menu-active");
-        } else if (bottomOfPage > documentHeight - 100) {
-            $("#contact-button").addClass("menu-active").siblings().removeClass("menu-active");
-        } else if (windowTop >= projectsLoc.top && windowTop < contactLoc.top) {
-            $("#projects-button").addClass("menu-active").siblings().removeClass("menu-active");
-        }
-    });
-
     // Pull out mobile menu when menu button is clicked
     $(".mobile-menu").click(function() {
         $(".menu-list").toggleClass("active");
@@ -40,17 +56,6 @@ $(document).ready(function() {
     // Close mobile menu when item is clicked
     $(".menu-button").click(function() {
         $(".menu-list").removeClass("active");
-    });
-
-    // Make project image "hover" when text is hovered
-    $(".project-text").hover(function() {
-        $(this).prev().toggleClass("hoverImage");
-    });
-
-    // Clicking on project image should follow layered text's href
-    $(".project-image").click(function() {
-        var projectLink = $(this).next();
-        window.open(projectLink.attr("href"));
     });
 
 });
