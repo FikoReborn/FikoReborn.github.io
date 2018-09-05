@@ -1,16 +1,16 @@
-$(document).ready(function() {
-
-    // Make navigation menu fixed if scrolled past header
-    $(window).scroll(function() {
-        var windowTop = $(window).scrollTop();
-        var headerHeight = $("header").height();
-        if (windowTop > headerHeight) {
-            $("nav").addClass("fixed-header");
-        }
-        else {
-            $("nav").removeClass("fixed-header");
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementsByTagName('header')[0];
+    const nav = document.getElementsByTagName('nav')[0];
+    window.addEventListener('scroll', () => {
+        const windowTop = window.scrollY;
+        const headerHeight = header.offsetHeight;
+        windowTop > headerHeight ? nav.classList.add('fixed-header') : nav.classList.remove('fixed-header');
     });
+})
+
+
+
+$(document).ready(function() {
     
     // Change menu button class to "active" depending on where user is located on the page
     $(window).scroll(function() {
