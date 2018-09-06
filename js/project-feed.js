@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 runData = data => {
-  const projectSection = document.getElementsByClassName('projects-container')[0];
+  const projectSection = document.getElementsByClassName(
+    'projects-container'
+  )[0];
   // Pull the last project first
   const lastEntry = data.length - 1;
   let html = '';
@@ -26,10 +28,13 @@ runData = data => {
       `<div><h3 class="project-title">${name}</h3></div>` +
       `<div class="project-category">${category}</div>` +
       `<div class="project-description">${description}</div>` +
-      `<div class="project-links">` +
-      `<a href="${pUrl}" class="project-live" target="_blank">Live Version</a> | ` +
-      `<a href="${source}" class="project-source" target="_blank">Source</a></div>` +
-      `</div>`;
+      `<div class="project-links">`;
+    pUrl &&
+      (html += `<a href="${pUrl}" class="project-live" target="_blank">Live Version</a>`);
+    pUrl && source && (html += ` | `);
+    source &&
+      (html += `<a href="${source}" class="project-source" target="_blank">Source</a></div>`);
+    html += `</div>`;
   }
   projectSection.innerHTML += html;
 };
