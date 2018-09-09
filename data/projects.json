@@ -58,14 +58,14 @@
     },
     {
       "name": "Memory Game",
-      "url": "https://www.aduff.org/udacity-memory-game",
+      "url": "https://FikoReborn.github.io/udacity-memory-game",
       "source": "https://github.com/FikoReborn/udacity-memory-game",
       "category":3,
       "description":"This is a Star Wars-themed memory game. Just try to match each picture with its identical tile. Beat your high score!"
     },
     {
       "name": "Arcade Game Clone",
-      "url": "https://www.aduff.org/udacity-arcade-game",
+      "url": "https://FikoReborn.github.io/udacity-arcade-game",
       "source": "https://github.com/FikoReborn/udacity-arcade-game",
       "category":3,
       "description":"This was a fun project, and one I was honestly lookingi forward to doing. Have you ever played the old arcade game \"Frogger?\" That is basically what this is, except the user plays as a human instead of a frog, and there are bugs instead of cars and trucks. Get to the other side, and reappear at the start, keep going. The bugs get faster each time, and a rogue bug is a little bit faster than the others. Beat your high score!"
@@ -90,7 +90,7 @@
     },
     {
       "name": "NYS Parks Map",
-      "url": "https://www.aduff.org/nys-parks-map",
+      "url": "https://FikoReborn.github.io/nys-parks-map",
       "source": "https://github.com/FikoReborn/nys-parks-map",
       "category":3,
       "description":"This was a truly start-from-scratch project. This is the final project through Udacity. I was to create a Neighborhood Map of my choice using Google Maps or another maps API with at least one third-party API to be shown in the infowindow. I chose to pull all data from New York State Parks from Open NY, and to pull additional data from Foursquare when each marker is clicked."
