@@ -50,7 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.addEventListener('click', () => {
         menuList.classList.toggle('active');
     });
-    menuList.addEventListener('click', () => {
-        menuList.classList.toggle('active');
+    menuList.addEventListener('click', e => {
+        if(e.target.classList[0] === 'menu-button') {
+            menuList.classList.toggle('active');
+        }
     })
 })
