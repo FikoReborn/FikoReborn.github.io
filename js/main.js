@@ -49,5 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     mobileMenu.addEventListener('click', () => {
         menuList.classList.toggle('active');
+    });
+    menuList.addEventListener('click', () => {
+        menuList.classList.toggle('active');
     })
 })
