@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         stickyHeader(header, nav);
         activateMButton(header, nav);
-        mobileMenu.addEventListener('click', () => {
-            menuList.classList.toggle('active');
-        })
     });
+    mobileMenu.addEventListener('click', () => {
+        menuList.classList.toggle('active');
+    })
 })
