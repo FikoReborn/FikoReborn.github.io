@@ -151,10 +151,6 @@ header {
     color: #fff;
     font-family: "Gugi", cursive;
     font-size: 1.2em;
-    animation-name: headercolor;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
 }
 
 .left-head {
@@ -165,22 +161,6 @@ header {
 .logo {
     margin: 20px;
     height: 60px;
-    animation-name: logoimage;
-    animation-iteration-count: infinite;
-    animation-duration: 22s;
-}
-
-@keyframes headercolor {
-    0% {
-        background-color: #01579b;
-    }
-    50% {
-        transform: skew(-1deg);
-        
-    }
-    100% {
-        background-color: #01579b;
-    }
 }
 
 .right-head {
