@@ -78,6 +78,7 @@
     },
     {
       "name": "Restaurant Reviews Project",
+      "url": "https://fikoreborn.github.io/mws-restaurant-stage-1/",
       "source": "https://github.com/FikoReborn/mws-restaurant-stage-1",
       "category":3,
       "description":"This project gave the the objective of making a restaurant reviews app responsive and accessibility-friendly. This is also my first project dealing with service workers so it can be viewed offline without an internet connection."
