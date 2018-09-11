@@ -85,6 +85,7 @@
     {
       "name": "MyReads Project",
       "source": "https://github.com/FikoReborn/reactnd-project-myreads-starter",
+      "url":"https://fikoreborn.github.io/reactnd-project-myreads-starter/",
       "category":3,
       "description":"My first React project (and the first time I learned that I am in love with React). After being given some very basic starter code(basically a layout with no functionality), my objective was to enable the ability to move books between shelves and enable a search feature - which would hold the same shelf-state as the main component."
     },
