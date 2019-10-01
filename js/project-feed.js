@@ -50,6 +50,9 @@ setCategory = data => {
     case 3:
       return 'Udacity Front-end Nanodegree';
       break;
+    case 4:
+      return 'Personal Project';
+      break;
     default:
       return 'N/A;';
   }

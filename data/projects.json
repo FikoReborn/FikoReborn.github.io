@@ -96,6 +96,13 @@
       "source": "https://github.com/FikoReborn/nys-parks-map",
       "category":3,
       "description":"This was a truly start-from-scratch project. This is the final project through Udacity. I was to create a Neighborhood Map of my choice using Google Maps or another maps API with at least one third-party API to be shown in the infowindow. I chose to pull all data from New York State Parks from Open NY, and to pull additional data from Foursquare when each marker is clicked."
+    },
+    {
+      "name": "Simple To-Do List",
+      "url": "https://fikoreborn.github.io/nhl-stats",
+      "source": "https://github.com/FikoReborn/nhl-stats",
+      "category": 4,
+      "description":"Pulls data from the NHL's stats API and displays data in the form of a web application."
     }
   ]
 }
